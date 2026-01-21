@@ -1,19 +1,15 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Se activa cada vez que haces push a la rama 'main'
   push:
     branches: [ main ]
-  # Te permite ejecutarlo manualmente desde la pestaña Actions en GitHub
   workflow_dispatch:
 
-# Permisos necesarios para desplegar
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Evita que se ejecuten varios despliegues a la v
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -22,14 +18,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name:  Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
-        uses: withastro/action@v3
-        # with:
-          # path: . # La raíz de tu proyecto (opcional)
-          # node-version: 20 # Versión específica de Node (opcional)
-          # package-manager: pnpm@latest # Opcional, detecta automático
+        uses:  withastro/action@v3
+        with:
+          package-manager: npm@latest
 
   deploy:
     needs: build
@@ -40,4 +34,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses:  actions/deploy-pages@v4
