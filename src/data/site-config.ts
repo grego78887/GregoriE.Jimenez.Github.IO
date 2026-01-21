@@ -3,13 +3,13 @@ import hero from '../assets/images/hero.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
-    website: 'https://example.com',
+    website: 'gregori.Github',
     avatar: {
         src: avatar,
         alt: 'Ethan Donovan'
     },
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
+    title: 'Gregori Evangelista',
+    subtitle: 'It is my personal blog ',
     description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     image: {
         src: '/dante-preview.jpg',
@@ -29,8 +29,8 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Tags',
-            href: '/tags'
+            text: 'Github',
+            href: 'https://github.com/grego78887'
         }
     ],
     footerNavLinks: [
@@ -40,25 +40,22 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: '809-271-1236'
         },
         {
-            text: 'Terms',
-            href: '/terms'
+            text: 'gmail',
+            href: 'gregorievangelista43@gmail.com'
         },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
+       
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'LinkedInd',
+            href: 'https://www.linkedin.com/in/gregori-evangelista-jimenez-5a077932b/'
         },
         {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://www.instagram.com/gregx_ri?igsh=eW02djY1c3pocWw2&utm_source=qr'
         },
         {
             text: 'X/Twitter',
