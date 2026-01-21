@@ -13,7 +13,7 @@ permissions:
   pages: write
   id-token: write
 
-# Evita que se ejecuten varios despliegues a la vez
+# Evita que se ejecuten varios despliegues a la v
 concurrency:
   group: "pages"
   cancel-in-progress: false
