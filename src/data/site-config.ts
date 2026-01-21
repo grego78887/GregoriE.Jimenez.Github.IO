@@ -6,7 +6,7 @@ const siteConfig: SiteConfig = {
    
     title: 'Gregori Evangelista',
     subtitle: 'It is my personal blog ',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    description: 'durisimo',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
